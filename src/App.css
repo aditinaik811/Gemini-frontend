@@ -13,12 +13,18 @@
 }
 
 .heading{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height:6vh;
   background:linear-gradient(to right,rgb(5, 5, 49),rgb(76, 20, 139));
   text-align: center;
-  color:white;
+  color:goldenrod;
+  gap:5px;
 
+}
+.icon{
+  color: rgb(160, 197, 24);
 }
 
 .box{
@@ -88,6 +94,14 @@ textarea::-webkit-scrollbar
   border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+}
+.btn:hover{
+  background: linear-gradient(to right, goldenrod, rgb(201, 100, 11));
+  color: black;
 }
 .pic{
   width: 200px;

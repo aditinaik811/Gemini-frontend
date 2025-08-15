@@ -5,6 +5,7 @@ import gemini from '../src/assets/gemini.webp'
 import SendIcon from '@mui/icons-material/Send';
 import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
+import DiamondIcon from '@mui/icons-material/Diamond';
 import { useState } from 'react';
 import loader from '../src/assets/loader.gif';
 const API = process.env.REACT_APP_API_BASE_URL
@@ -41,7 +42,7 @@ function App() {
   }
   return (
     <>
-    <h1 className='heading'>Hii I am your AI Assistant</h1>
+    <h1 className='heading'><DiamondIcon className='icon'/>Hii I am your AI Assistant<DiamondIcon className='icon'/></h1>
     <div className="App">
        
       <div className="box">
