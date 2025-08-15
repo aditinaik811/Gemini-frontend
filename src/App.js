@@ -50,7 +50,7 @@ function App() {
             <img className="pic" src={aditi} alt="profile-pic"/>
         </div>
         <p className='label'>Question</p>
-        <textarea onChange={(e)=>{setQuestion(e.target.value)}}></textarea>
+        <textarea onChange={(e)=>{setQuestion(e.target.value)}} placeholder='Type your Question Here...'></textarea>
         <button className="btn" onClick={submitHandler}>Send  <SendIcon/></button>
       </div>
       {loading &&
@@ -64,7 +64,7 @@ function App() {
             <img className="pic" src={gemini} alt="profile-pic"/>
         </div>
         <p className='label'>Response</p>
-        <textarea value={ans} className='response'></textarea>
+        <textarea value={ans} className='response' placeholder='Response from Gemini...'></textarea>
         <div className='response-btn'>
         <button className='btn res-btn'  onClick={speakHandler}>Speak<MicIcon/></button>
         {speaking &&<button className='btn res-btn' onClick={stopSpeakHandler}><MicOffIcon/>Stop</button>}
